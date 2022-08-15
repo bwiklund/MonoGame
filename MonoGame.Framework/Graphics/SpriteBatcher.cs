@@ -3,7 +3,6 @@
 // file 'LICENSE.txt', which is part of this source code package.
 
 using System;
-using System.Collections.Generic;
 
 namespace Microsoft.Xna.Framework.Graphics
 {
@@ -28,10 +27,6 @@ namespace Microsoft.Xna.Framework.Graphics
         /// The maximum number of batch items that can be processed per iteration
         /// </summary>
         private const int MaxBatchSize = short.MaxValue / 6; // 6 = 4 vertices unique and 2 shared, per quad
-        /// <summary>
-        /// Initialization size for the vertex array, in batch units.
-        /// </summary>
-		private const int InitialVertexArraySize = 256;
 
         /// <summary>
         /// The list of batch items to process.
